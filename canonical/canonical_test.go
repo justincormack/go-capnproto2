@@ -20,7 +20,10 @@ func TestConvert(t *testing.T) {
 		inFile  string
 		outFile string
 	}{
-	// TODO(light): add tests
+		{
+			"emptyonewordstruct.dat",
+			"emptyonewordstruct_canonical.dat",
+		},
 	}
 	for _, test := range tests {
 		in, err := readTestFile(test.inFile)
